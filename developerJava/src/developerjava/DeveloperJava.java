@@ -279,11 +279,12 @@ public class DeveloperJava {
         System.out.println("=============CURSO DE JAVA BASICO=============\n");
         System.out.println("Oprime ENTER para empezar con el curso");
         System.out.println("Ingrese la palabra (salir) para salir del programa");
-                String opcion = null;
-        if (opcion == "salir"){
+                String opcion = input.nextLine();
+        if (opcion.equals("salir")){
             System.out.println("Saliendo del programa...");
+            return;
         }
-        String salto = input.nextLine();
+        
         System.out.println("Ingresaste al programa...\n");
         System.out.println("BIENVENIDO A JAVA!\n");
         System.out.println("Java es uno de los lenguajes de programacion mas\n"
